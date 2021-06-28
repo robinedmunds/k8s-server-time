@@ -40,7 +40,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.0-beta.3.1"],
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"]
+            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
+            ["sanitize.css", "npm:12.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -2171,7 +2172,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.0-beta.3.1"],
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"]
+            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
+            ["sanitize.css", "npm:12.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -7124,6 +7126,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-549ba83f5b.zip/node_modules/safer-buffer/",
           "packageDependencies": [
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sanitize.css", [
+        ["npm:12.0.1", {
+          "packageLocation": "./.yarn/cache/sanitize.css-npm-12.0.1-8146fb033d-cb6cf8a406.zip/node_modules/sanitize.css/",
+          "packageDependencies": [
+            ["sanitize.css", "npm:12.0.1"]
           ],
           "linkType": "HARD",
         }]

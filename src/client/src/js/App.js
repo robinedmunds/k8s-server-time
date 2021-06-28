@@ -1,4 +1,5 @@
 import React from "react"
+import "sanitize.css"
 import "../styles/App.scss"
 
 const App = () => {
