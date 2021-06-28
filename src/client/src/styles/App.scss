@@ -1,0 +1,12 @@
+$color-bg: #424651;
+$color-highlight: #21fa90;
+$color-text: #eee;
+
+$font-header: "sans-serif";
+$font-paragraph: "serif";
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-header;
+}
