@@ -1,13 +1,10 @@
 const express = require("express")
 const app = express()
 const port = 3000
+const staticResponse = require("./staticResponse")
 
 app.get("/", (req, res) => {
-  res.send({
-    api: {
-      message: "The express api is responding correctly..."
-    }
-  })
+  res.send(staticResponse)
 })
 
 app.listen(port, () => {
