@@ -1,8 +1,8 @@
 import React from "react"
 
-const Time = () => {
+const Time = (props) => {
   return (
-    <div class="time">99:99:99</div>
+    <div class="time">{props.formatedTime}</div>
   )
 }
 
