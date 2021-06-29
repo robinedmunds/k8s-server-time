@@ -4,7 +4,9 @@ const port = 3000
 const staticResponse = require("./staticResponse")
 
 app.get("/", (req, res) => {
-  res.send(staticResponse)
+  const datetime = new Date()
+  const combine = {data: {...staticResponse, datetime}}
+  res.send(combine)
 })
 
 app.listen(port, () => {
