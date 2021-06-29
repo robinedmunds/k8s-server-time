@@ -2,10 +2,11 @@ import React, { Component } from "react"
 import "sanitize.css"
 import "../styles/App.scss"
 import Time from "./components/Time"
+import getServerTime from "./api/getServerTime"
 
 class App extends Component {
   render() {
-    const formatedTime = "77:77:77"
+    const formatedTime = getServerTime()
 
     return (
       <div class="container">
