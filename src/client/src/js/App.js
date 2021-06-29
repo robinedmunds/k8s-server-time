@@ -9,8 +9,8 @@ class App extends Component {
     const formatedTime = getServerTime()
 
     return (
-      <div class="container">
-        <div class="block">
+      <div className="container">
+        <div className="block">
           <h1>API Server Time</h1>
           <Time formatedTime={formatedTime} />
           <p>This is a two docker image Kubernetes demo. It comprises of a parcel, react, nginx, frontend. And a node, express backend json api which supplies the time.</p>

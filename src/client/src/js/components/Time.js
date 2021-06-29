@@ -2,7 +2,7 @@ import React from "react"
 
 const Time = (props) => {
   return (
-    <div class="time">{props.formatedTime}</div>
+    <div className="time">{props.formatedTime}</div>
   )
 }
 
