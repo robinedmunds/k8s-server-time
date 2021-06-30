@@ -43,7 +43,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
-            ["sanitize.css", "npm:12.0.1"]
+            ["sanitize.css", "npm:12.0.1"],
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "SOFT",
         }]
@@ -3300,7 +3301,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parcel", "npm:2.0.0-beta.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
-            ["sanitize.css", "npm:12.0.1"]
+            ["sanitize.css", "npm:12.0.1"],
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "SOFT",
         }]
@@ -11107,6 +11109,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.9-a1d19e598d-3c58da6f61.zip/node_modules/yargs-parser/",
           "packageDependencies": [
             ["yargs-parser", "npm:20.2.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yarn", [
+        ["npm:1.22.10", {
+          "packageLocation": "./.yarn/unplugged/yarn-npm-1.22.10-b1a926d20f/node_modules/yarn/",
+          "packageDependencies": [
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "HARD",
         }]
