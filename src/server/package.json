@@ -1,7 +1,7 @@
 {
   "name": "server",
   "scripts": {
-    "start": "yarn node ./src/server.js",
+    "start": "node ./src/server.js",
     "test": "jest"
   },
   "dependencies": {
