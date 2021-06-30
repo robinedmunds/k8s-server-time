@@ -7,7 +7,7 @@ import getServerTime from "./api/getServerTime"
 class App extends Component {
   constructor(props) {
     super(props)
-    this.state = {serverTime: new Date("1980-01-01T01:00:00")}
+    this.state = {serverTime: new Date("1980-01-01T00:00:00")}
   }
 
   componentDidMount = () => {
