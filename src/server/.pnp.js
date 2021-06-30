@@ -39,7 +39,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
-            ["jest", "virtual:48fd9d653646a991d0eda5ffe92778b72de446c151643ca5c3964e62f24bed64d28e19b09ae1edf82cd4ab484e9e16d2c4b4953045a3524fb9431546d36f4563#npm:27.0.6"]
+            ["jest", "virtual:48fd9d653646a991d0eda5ffe92778b72de446c151643ca5c3964e62f24bed64d28e19b09ae1edf82cd4ab484e9e16d2c4b4953045a3524fb9431546d36f4563#npm:27.0.6"],
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "SOFT",
         }]
@@ -4621,7 +4622,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["server", "workspace:."],
             ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
-            ["jest", "virtual:48fd9d653646a991d0eda5ffe92778b72de446c151643ca5c3964e62f24bed64d28e19b09ae1edf82cd4ab484e9e16d2c4b4953045a3524fb9431546d36f4563#npm:27.0.6"]
+            ["jest", "virtual:48fd9d653646a991d0eda5ffe92778b72de446c151643ca5c3964e62f24bed64d28e19b09ae1edf82cd4ab484e9e16d2c4b4953045a3524fb9431546d36f4563#npm:27.0.6"],
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "SOFT",
         }]
@@ -5391,6 +5393,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.9-a1d19e598d-3c58da6f61.zip/node_modules/yargs-parser/",
           "packageDependencies": [
             ["yargs-parser", "npm:20.2.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yarn", [
+        ["npm:1.22.10", {
+          "packageLocation": "./.yarn/unplugged/yarn-npm-1.22.10-b1a926d20f/node_modules/yarn/",
+          "packageDependencies": [
+            ["yarn", "npm:1.22.10"]
           ],
           "linkType": "HARD",
         }]
