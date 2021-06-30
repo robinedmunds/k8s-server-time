@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    this.timeID = setInterval( () => this.tick(), 1000 )
+    this.timerID = setInterval( () => this.tick(), 1000 )
   }
 
   componentWillUnmount = () => {
@@ -29,11 +29,11 @@ class App extends Component {
     const serverTimeStr = this.state.serverTime.toTimeString()
     const split = serverTimeStr.split(" ")
     const time = split[0]
-    const locale = split.slice(1).join(" ")
+    const timezone = split.slice(1).join(" ")
 
     const formatedTime = {
       time,
-      locale
+      timezone
     }
 
     return (

@@ -5,6 +5,3 @@ export default async () => {
   const datetime = new Date(response.data.data.datetime)
   return datetime
 }
-
-
-// res.data.data.datetime
