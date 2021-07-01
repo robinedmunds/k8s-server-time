@@ -5,7 +5,7 @@ services:
       context: src/client/
       dockerfile: Dockerfile.dev
 
-    container_name: k8s-test-project-client
+    container_name: k8s-server-time-client
     ports: 
       - 1234:1234
     volumes:
@@ -16,7 +16,7 @@ services:
       context: src/server/
       dockerfile: Dockerfile.dev
 
-    container_name: k8s-test-project-server
+    container_name: k8s-server-time-server
     ports:
       - 3000:3000
     volumes:
