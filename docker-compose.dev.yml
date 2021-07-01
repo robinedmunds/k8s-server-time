@@ -8,6 +8,8 @@ services:
     container_name: k8s-test-project-client
     ports: 
       - 1234:1234
+    volumes:
+      - ./src/client/src/:/app/src/
   
   server:
     build:
