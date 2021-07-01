@@ -2,6 +2,7 @@
   "name": "server",
   "scripts": {
     "start": "node ./src/server.js",
+    "dev": "nodemon",
     "test": "jest"
   },
   "dependencies": {

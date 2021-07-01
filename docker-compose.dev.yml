@@ -12,8 +12,10 @@ services:
   server:
     build:
       context: src/server/
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
 
     container_name: k8s-test-project-server
     ports:
       - 3000:3000
+    volumes:
+      - ./src/server/src/:/app/src/
