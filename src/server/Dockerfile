@@ -1,8 +1,13 @@
 FROM node:lts-alpine
 
 WORKDIR /app
-COPY . .
+COPY .yarn/ .yarn/
+COPY .pnp.js .
+COPY .yarnrc.yml .
+COPY yarn.lock .
 
 RUN yarn install
+
+COPY . .
 
 CMD ["yarn", "start"]
