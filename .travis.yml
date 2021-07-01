@@ -5,8 +5,8 @@ services:
 
 before_install:
   - docker --version
-  - docker build -f Dockerfile.dev --tag roblobob/k8s-server-time-client-dev ./src/client
-  - docker build -f Dockerfile.dev --tag roblobob/k8s-server-time-server-dev ./src/server
+  - docker build --tag roblobob/k8s-server-time-client-dev --file ./src/client/Dockerfile.dev ./src/client
+  - docker build --tag roblobob/k8s-server-time-server-dev --file ./src/server/Dockerfile.dev ./src/server
 
 script:
   - docker run --rm roblobob/k8s-server-time-client-dev /bin/sh -c "cd /app; yarn test"
@@ -15,7 +15,7 @@ script:
 after_success:
   - docker build --tag roblobob/k8s-server-time-client ./src/client
   - docker build --tag roblobob/k8s-server-time-server ./src/server
-  
+
   # login to docker cli and push images
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push roblobob/k8s-server-time-client
