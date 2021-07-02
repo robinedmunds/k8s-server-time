@@ -1,6 +1,6 @@
 dist: focal
 
-language: python
+language: ruby
 
 services:
   - docker
