@@ -9,6 +9,10 @@ before_install:
   - docker --version
   - docker build --tag roblobob/k8s-server-time-client-dev --file ./src/client/Dockerfile.dev ./src/client
   - docker build --tag roblobob/k8s-server-time-server-dev --file ./src/server/Dockerfile.dev ./src/server
+  # digitalocean cli setup
+  - snap install doctl
+  - snap connect doctl:kube-config
+  - snap connect doctl:dot-docker
 
 script:
   - docker run --rm roblobob/k8s-server-time-client-dev /bin/sh -c "cd /app; yarn test"
