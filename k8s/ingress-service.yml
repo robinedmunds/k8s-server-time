@@ -1,14 +1,11 @@
-apiVersion: networking.k8s.io/v1
+# https://microk8s.io/docs/addon-ingress
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: ingress-servicea
-  annotations:
-    # use the shared ingress-nginx
-    kubernetes.io/ingress.class: "nginx"
+  name: ingress-service
 spec:
   rules:
-  - host: 1.k8s.local
-    http:
+  - http:
       paths:
       - path: /
         backend:
