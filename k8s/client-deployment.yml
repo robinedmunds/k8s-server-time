@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: roblobob/k8s-server-time-client:c99c319ffc634f602976e7839e9397046231cb37
+          image: roblobob/k8s-server-time-client:83054ab4034ac6658ec8356e4eab2e64eb7e07e5
           ports:
             - containerPort: 8080
