@@ -19,10 +19,15 @@ script:
   - docker run --rm roblobob/k8s-server-time-server-dev /bin/sh -c "cd /app; yarn test"
 
 after_success:
-  - docker build --tag roblobob/k8s-server-time-client:$TRAVIS_COMMIT ./src/client
-  - docker build --tag roblobob/k8s-server-time-server:$TRAVIS_COMMIT ./src/server
+  - docker build --tag client ./src/client
+  - docker image tag client roblobob/k8s-server-time-client:$TRAVIS_COMMIT
+  - docker image tag client roblobob/k8s-server-time-client:latest
+
+  - docker build --tag server ./src/server
+  - docker image tag server roblobob/k8s-server-time-server:$TRAVIS_COMMIT
+  - docker image tag server roblobob/k8s-server-time-server:latest
 
   # login to docker cli and push images
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push roblobob/k8s-server-time-client:$TRAVIS_COMMIT
-  - docker push roblobob/k8s-server-time-server:$TRAVIS_COMMIT
+  - docker push --all-tags roblobob/k8s-server-time-client
+  - docker push --all-tags roblobob/k8s-server-time-server
