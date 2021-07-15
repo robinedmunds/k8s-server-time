@@ -2,9 +2,9 @@ const express = require("express")
 const app = express()
 const cors = require("cors")
 const staticResponse = require("./staticResponse")
-app.use(cors())
+const PORT = process.env.PORT || 3000
 
-const port = 3000
+app.use(cors())
 
 app.get("/", (req, res) => {
   const datetime = new Date()
@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
   res.send(combine)
 })
 
-app.listen(port, () => {
-  console.log(`Express server running on port ${port} ...`)
+app.listen(PORT, () => {
+  console.log(`Express server running on PORT ${PORT} ...`)
 })
